@@ -2,7 +2,7 @@
 #include <gmp.h>
 
 char *list[] = {
-	"37107287533902102798797998220837590246510135740250",
+        "37107287533902102798797998220837590246510135740250",
     "46376937677490009712648124896970078050417018260538",
     "74324986199524741059474233309513058123726617309629",
     "91942213363574161572522430563301811072406154908250",
@@ -106,22 +106,21 @@ char *list[] = {
 
 int main (void)
 {
-	const int x = sizeof(numbers) / sizeof(numbers[0]);
+        const int x = sizeof(numbers) / sizeof(numbers[0]);
 
-	mpz_t i, j;
-	mpz_init(i);
-	mpz_init(j);
+        mpz_t i, j;
+        mpz_init(i);
+        mpz_init(j);
 
-	mpz_set_ui(j, 0);
+        mpz_set_ui(j, 0);
 
-	int k;
-	for (k = 0; k < x; ++k)
-	{
-		mpz_set_str(i, number[k], 10);
-		mpz_add(j,j,i);
-	}
-	
-	printf("%.10s\n", mpz_get_str(NULL, 10, j));
-	return 0;
+        int k;
+        for (k = 0; k < x; ++k)
+        {
+                mpz_set_str(i, number[k], 10);
+                mpz_add(j,j,i);
+        }
+
+        printf("%.10s\n", mpz_get_str(NULL, 10, j));
+        return 0;
 }
-
