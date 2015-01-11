@@ -9,18 +9,18 @@
 int main(void)
 {
 	int sum = 0;
-
+	//count for less than 100
 	sum += 9 * FIRST;
 	sum += SECOND;
 	sum += 10 * THIRD;	
-	
+	//overflow from 1-1000
 	sum *= 10;
-	
+	//first digit for 3 digits
 	sum += 100 * FIRST;
-	
+	//adding the hundreds and ADD
 	sum += 900 * COUNT;
 	sum += 890 * ADD + 1;
-	
+	//and the 1000
 	sum += 12;
 	
 	printf("%d\n", sum);
