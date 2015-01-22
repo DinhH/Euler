@@ -1,6 +1,6 @@
 //Find the sum of the digits in the number 100!
 
-#include <gmp.h>
+//#include <gmp.h>
 #include <stdio.h>
 #include <stdlib.h>
 
