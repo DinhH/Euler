@@ -20,7 +20,7 @@ int main(void)
 	return 0;
 }
 
-int divisor(int n)
+int divisors(int n)
 {
 	int i;
 	int k = n;
