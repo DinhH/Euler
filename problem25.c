@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <gmp.h>
+//#include <gmp.h>
 
 int main (void)
 {
@@ -16,7 +16,7 @@ int main (void)
 		size_t length;
 	
 	mpz_fib_ui(n,i);
-	str = mpz_get_str(NULL, 10,n);
+	//str = mpz_get_str(NULL, 10,n);
 	length = strlen(str);
 
 	free(str);
