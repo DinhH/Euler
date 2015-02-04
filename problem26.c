@@ -4,8 +4,8 @@
 int main(void)
 {
 	mpz_t i, j;
-	mpz_init(i);
-	mpz_init(j);
+	//mpz_init(i);
+	//mpz_init(j);
 
 	unsigned max_length = 0;
 	unsigned max_size = 0;
