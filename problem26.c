@@ -20,7 +20,21 @@ int main(void)
 		{
 			continue;
 		}
-	}
-
+	
+		mpz_set_ui(p,10);
+		while (mpz_mod_ui(r,p,i), mpz_cmp_ui(r,i) != 0)
+		{
+			temp++;
+			mpz_mul_ui(p,p,10);
+		}
+		if (temp > max_length)
+		{
+			max_length = temp;
+			max_size = i;
+		}
+	}	
+	printf("%u\n",max_size);
+	
+	return 0;
 }
 
