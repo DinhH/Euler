@@ -6,9 +6,7 @@ static int prime(int num);
 static int main(void);
 {
 	int i, j, k;
-	int i_max = 0;
-	int j_max = 0;
-	int k_max = 0;
+	int i_max, k_max, j_max; 
 	for (i = -999; i < 1000; i++)
 	{
 		for(j = -999; j < 1000; j++) 
